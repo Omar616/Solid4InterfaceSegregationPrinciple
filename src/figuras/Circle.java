@@ -1,5 +1,5 @@
 /**
- * Alumno: Miranda Sanchez Maria Fernanda
+ * Alumno: Bueno Rosas Brayan Omar
  * Grupo: 5IM8.
  * Version 1.0
  * Fecha: 06/09/2017
@@ -9,10 +9,18 @@ package figuras;
 import java.util.Scanner;
 /**
  * La clase circulo implementa la interfaz LFiguras
- * @author Fernanda
+ * En este caso lo toma con una clase abstracta retomando sus metodos para sobreescribirlos 
+ * En un metodo se modifica para añadir comportamiento más no para modificarlo
+ * @author Brayan 
  */
 
-public class circulo implements LFiguras{
+/**
+ * La clase Circle implementa la interfaz Figurassobreescrita
+ En este caso lo toma con una clase abstracta retomando sus metodos para sobreescribirlos 
+ En un metodo se modifica para añadir comportamiento más no para modificarlo
+ * @author Brayan
+ */
+public class Circle implements Figurassobreescrita{
     /**
      * Declaración de variables
      */

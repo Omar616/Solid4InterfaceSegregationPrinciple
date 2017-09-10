@@ -1,52 +1,49 @@
 /**
- * Alumno: Miranda Sanchez Maria Fernanda
+ * Alumno: Bueno Rosas Brayan Omar
  * Grupo: 5IM8.
  * Version 1.0
  * Fecha: 06/09/2017
  */
-package figuras; 
-/**
- * La clase triangulo implementa la interfaz LFiguras
- * @author Fernanda
- */
+package figuras;
+
 import java.util.Scanner;
-
-public class triangulo implements LFiguras {
-
+/**
+ * La clase Square implementa la interfaz Figurassobreescrita
+ * @author Brayan 
+ */
+public class Square implements Figurassobreescrita{
     /**
      * Declaración de variables
-     */    
-    private double base;
-    private double altura;
+     */
+private double ladoA;
 
-    /**
+     /**
      * Método Datos: El usuario registra los datos.
      */
-   @Override
+      @Override
    public void Datos(){
    Scanner leer=new Scanner(System.in);
    System.out.println("Ingrese base ");
-   base=leer.nextDouble();
-   System.out.println("Ingrese altura ");
-   altura=leer.nextDouble();
+   ladoA=leer.nextDouble();
    }
-    
-   /**
+   
+    /**
      * Método Área: El programa calcula el área.
      */
    @Override
    public double area(){
    
-   return (base*altura)/2;
+   return ladoA*ladoA;
    }
    
-     /**
+    /**
      * Método Perímetro: El programa calcula el perímetro.
-     */  
+     */
     @Override
     public double perimetro(){
-    return base*3;
-    
+    return ladoA*4;
     }
     
+    
+
 }
